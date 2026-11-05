@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "petbot",
+  "version": "2.0.0",
+  "name": "Petbot",
+  "description": "Small client-side player pets that follow you, surround you, wear armor and can be shared with other Petbot users.",
+  "authors": ["you"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.petbot.PetbotClient"]
+  },
+  "mixins": [
+    { "config": "petbot.mixins.json", "environment": "client" }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
